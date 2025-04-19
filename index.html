@@ -29,10 +29,23 @@
 <body>
     <div class="word-list">
         <h1>Discovery Days - Jemma Mae's Food Label</h1>
-        <p>milk type formula = no additional marking, breast milk = blue tape on lid]</p>
+        <p>milk type [formula = no additional marking, breast milk = blue tape on lid]</p>
 	<p> milk fluid volume = 4 oz </p>
         <p>Student Name: Jemma Mae Reddy-Williams</p>
-        <p>Date of Attendance: April 18, 2025</p>
+          <script>
+    const dateElement = document.getElementById('today-date');
+    const today = new Date();
+
+    // Format the date (you can change this format)
+    const formattedDate = today.toLocaleDateString(undefined, {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+
+    dateElement.textContent = formattedDate;
+  </script>
     </div>
 </body>
 </html>
